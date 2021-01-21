@@ -4,82 +4,22 @@
 
 .container {
   font-size: 15px;
+  height: 100vh;
 }
 
 /* ==========
   layout
   =========== */
 
-.nav_bar {
-  float: right;
-}
-
 .body {
-  height: 100vh;
-  position: relative
+  // background-image: url("/cornell-background.jpg");
+  // background-repeat: no-repeat;
+  // background-size: cover;
 }
 
 /* ==========
   components
   =========== */
-
-  /* nav bar */
-
-.nobe_cornell_logo {
-    float: left;
-    width: 50px;
-    height: 50px;
-    margin: 10px 0;
-}
-  
-.nav_container {
-  width: 90%;
-  margin: 0 auto;
-}
-
-.nav_container::after {
-  content: '';
-  display: table;
-  clear: both;
-}
-
-.nav_list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.nav_item {
-  display: inline-block;
-  margin-left: 80px;
-  padding-top: 25px;
-  position: relative;
-}
-
-.nav_bar a {
-  color: #444;
-  text-transform: uppercase;
-}
-
-.nav_bar a:hover {
-  color: black;
-}
-
-.nav_bar a::before {
-  content: '';
-  display: block;
-  height: 5px;
-  width: 100%;
-  background-color: #844;
-  position: absolute;
-  top: 0;
-  width: 0%;
-  transition: all ease-in-out 300ms;
-}
-
-.nav_bar a:hover::before {
-  width: 100%;
-}
 
   /* title */
 

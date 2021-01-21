@@ -1,0 +1,50 @@
+/* ==========
+  global styles
+  =========== */
+
+  .container {
+    font-size: 15px;
+    margin: 10px 50px;
+  }
+  
+  /* ==========
+    layout
+    =========== */
+  
+  .body {
+    height: 100vh;
+    position: relative;
+  }
+  
+  /* ==========
+    components
+    =========== */
+
+    /* committees */
+
+    .committee_list {
+        list-style: none;
+        margin: 0 0 30px 0;
+        padding: 0;
+    }
+
+    .committee {
+        display: inline-block;
+        margin-right: 70px;
+        font-size: 1.2rem;
+        background-color: transparent;
+        border-radius: 20px;
+        padding: 10px;
+        transition: background-color ease-in-out 200ms;
+    }
+
+    .committee:hover {
+        cursor: pointer;
+        background-color: #D3D3D3;
+    }
+
+    /* paragraphs */
+
+    .p {
+        margin: 15px 0px;
+    }
