@@ -1,9 +1,114 @@
 import NavigationBar from "../components/navbar";
+import styles from "./team.module.scss";
 
-export default function Projects() {
-    return (
-    <div>
-        <NavigationBar />
+const memberData = [
+  ["Andrew Osorio", "President", "[Description]"],
+  ["VP External", "VP External", "[Description]"],
+  [
+    "Andrew Zeng",
+    "VP Internal",
+    "My name is Andrew Zeng, and I am a sophomore studying Computer Science in the College of Arts and Sciences. I joined NOBE because I believe that an understanding of the principles of business and how it meshes with engineering is a requirement for fruitful teamwork and innovation as a developer. I also aim to build meaningful connections with those in sectors both adjacent and remote from my own. I am also a member of the Business and Communications Team at Cornell Cup Robotics, where I work on kickstarter development and marketing.",
+  ],
+  [
+    "Jeremy Jung",
+    "VP of Technology",
+    "Year: 2023 Major: Mathematics and Computer Science",
+  ],
+  [
+    "Kian Sorhaindo",
+    "VP of Marketing",
+    "I am Kian Sorhaindo, a sophomore of the class of 2023 majoring in civil engineering. I joined NOBE to get more people involved with the business side of engineering and broaden my knowledge in the business and engineering sector. At school I am part of a project team called Cornell Seismic Design that designs and builds a 5-foot model tower that must withstand a simulated seismic event. I also enjoy carpentry and last summer I built three wooden Adirondack deck chairs out of a tree from my yard.",
+  ],
+  [
+    "Titus Pierce",
+    "VP of Finance",
+    "I’m Titus Pierce, a sophomore (class of 2023) majoring in civil engineering. I joined NOBE to explore the important links between the engineering and business worlds, and hope to meet people with the same goal in mind. The importance of an understanding between these two areas is integral to innovation and advancements. Currently, I am a member of the Cayuga Heights Fire Department where I volunteer during the school year. I am looking forward to what is ahead with NOBE this semester and into the future.",
+  ],
+  [
+    "Eva Zhang",
+    "VP of Recruitment",
+    "I am Eva Zhang, a sophomore (class of 2023) majoring in Operations Research Engineering. I joined NOBE to not only meet like-minded peers, but also explore how I can better use my engineering knowledge in business. Currently, I am a member of a project team Cornell Cup Robotics, and work in the business/communications subteam. I am also the treasurer of Cornell Club Waterpolo. Last summer, I taught piano and music theory at a non-profit organization, and I still enjoy doing that in my free time.",
+  ],
+  [
+    "Bryan Fuchs",
+    "Secretary",
+    "I’m Bryan Fuchs, a sophomore (class of 2023) in CoE majoring in mechanical engineering. I joined NOBE to gain opportunities to meet professionals who are interested in business and engineering, and learn how the two can be integrated into one practice. I am also a member of Cornell Baja Racing, where I work with the team to design and build an off-road vehicle to compete against the best teams in the world. As technology evolves and is actively implemented in business decisions, engineering will become an invaluable asset. Therefore, NOBE will be able to put me one step ahead, and prepare me for the demands I will face as a member in the workforce.",
+  ],
+];
+
+export default function Team() {
+  return (
+    <div className={styles.container}>
+      <NavigationBar />
+      <h1 className={styles.title}>Executive Board</h1>
+      <hr></hr>
+      <EBoard />
+      <CommitteeLeads />
     </div>
-    );
+  );
+}
+
+/**
+ * Generate the descriptions, headshots, and profile information of
+ * the eBoard members
+ */
+function EBoard(props) {
+  var mems = memberData.map((x) => createMember(x));
+  return <section className={styles.eboard_roster}>{mems}</section>;
+}
+
+function CommitteeLeads(props) {
+  return (
+    <section>
+      <h1 className={styles.title}>Committee Leads</h1>
+      <hr></hr>
+    </section>
+  );
+}
+
+function createMember(memberData) {
+  var memberProps = {
+    name: memberData[0],
+    title: memberData[1],
+    description: memberData[2],
+  };
+  return EBoardMember(memberProps);
+}
+
+/**
+ * Generate the descriptions, headshots, and profile information of
+ * an eBoardMember
+ * @param name: The name of the E-Board member
+ * @param title: The title of the E-Board member
+ * @param description: The description of the E-Board member
+ */
+function EBoardMember(props) {
+  var firstLastName = props.name.toLowerCase().split(" ");
+  var headshotName = firstLastName[0] + "_" + firstLastName[1] + ".jpg";
+  return (
+    <div className={styles.eboard_member}>
+      <Headshot path={headshotName} />
+      <br></br>
+      <h3 className={styles.name}>{props.name}</h3>
+      <hr></hr>
+      <h4 className={styles.detail}>{props.title}</h4>
+      {/*<h4 className={styles.detail}>{props.major}</h4> */}
+      <p className={styles.description}>{props.description}</p>
+    </div>
+  );
+}
+
+function Headshot({ path }) {
+  var hsPath = `/headshots/${path}`;
+  return (
+    <img
+      src={hsPath}
+      onError={(e) => {
+        e.target.onerror = null;
+        e.target.src = "/headshots/placeholder.jpg";
+      }}
+      className={styles.headshot}
+      alt="path"
+    />
+  );
 }
