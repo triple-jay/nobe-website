@@ -104,8 +104,7 @@ function Headshot({ path }) {
     <img
       src={hsPath}
       onError={(e) => {
-        e.target.onerror = null;
-        e.target.src = "/headshots/placeholder.jpg";
+        e.currentTarget.src = "/headshots/placeholder.jpg";
       }}
       className={styles.headshot}
       alt="path"
