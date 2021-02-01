@@ -12,7 +12,7 @@ const memberData = [
   [
     "Jeremy Jung",
     "VP of Technology",
-    "Year: 2023 Major: Mathematics and Computer Science",
+    "My name is Jeremy Jung, and I am a sophomore majoring in mathematics and computer science in the College of Arts and Sciences. I joined NOBE because I am interested in the growing applications of technology in business. Outside of NOBE, I am a frontend developer on Queue Me In for Cornell Design & Tech Initiative, and I am also the founder of CashPal, a budgeting app on the App Store. In my free time, I make beats on my computer for upcoming rappers :).",
   ],
   [
     "Kian Sorhaindo",

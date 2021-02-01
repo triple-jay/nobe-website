@@ -58,15 +58,52 @@
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+  .eboard_roster {
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .eboard_member {
+    border: 2px solid rosybrown;
+    width: 25%;
+    box-shadow: 4px 5px #888888;
+    margin: 40px;
+  }
+
   .name {
     text-align: center;
+    color: rgba(15, 1, 1, 0.897);
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 30px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    letter-spacing: 2px;
   }
+
+  .hr {
+    size: 10%;
+  }
+
   .headshot {
-    width: 15%;
+    width: 100%;
     height: width;
-    justify-content: center;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 0px;
+  }
+
+  .detail {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 20px;
+    color: rgba(15, 1, 1, 0.897);
+    margin: 3px;
+  }
+
+  .description {
+    width: 100%;
+    text-align: center;
+    font-style: italic;
   }
 }
 
