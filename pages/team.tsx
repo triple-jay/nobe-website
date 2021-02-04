@@ -1,4 +1,5 @@
 import NavigationBar from "../components/navbar";
+import Footer from '../components/footer'
 import styles from "./team.module.scss";
 
 const memberData = [
@@ -44,6 +45,7 @@ export default function Team() {
       <hr></hr>
       <EBoard />
       <CommitteeLeads />
+      <Footer />
     </div>
   );
 }

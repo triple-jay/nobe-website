@@ -11,18 +11,16 @@ export default function Home() {
         <link rel="icon" href="/nobe-cornell.png" />
       </Head>
 
-      <NavigationBar />
-
-      <body className={styles.body}>
-
-
-        <div className={styles.nobe_cornell}>
-          <h2>NOBE&nbsp;</h2>
-          <h2 className={styles.cornell}>Cornell</h2>
-          <h3> Preparing students for success in business and engineering.</h3>
+      <div className={styles.container}>
+        <NavigationBar />
+        <div className={styles.body}>
+          <div className={styles.nobe_cornell}>
+            <h2>NOBE&nbsp;</h2>
+            <h2 className={styles.cornell}>Cornell</h2>
+            <h3> Preparing students for success in business and engineering.</h3>
+          </div>
         </div>
-
-      </body>
+      </div>
       
     </div>
   )

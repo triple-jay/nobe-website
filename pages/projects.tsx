@@ -1,4 +1,5 @@
 import NavigationBar from "../components/navbar";
+import Footer from '../components/footer';
 import { useState, MouseEvent } from 'react';
 import styles from './projects.module.scss';
 
@@ -22,9 +23,9 @@ export default function Team() {
     }
 
     return (
-    <body className={styles.body}>
+    <div className={styles.container}>
         <NavigationBar />
-        <div className={styles.container}>
+        <div className={styles.body}>
             <h1>Who are we?</h1>
             <p className={styles.p}>
                 Cornell NOBE is an organization dedicated to bridging the gap between business and technology
@@ -49,6 +50,7 @@ export default function Team() {
                 <p className={styles.p}>{description}</p>
             </div>
         </div>
-    </body>
+        <Footer />
+    </div>
     );
 }
