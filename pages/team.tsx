@@ -1,5 +1,5 @@
 import NavigationBar from "../components/navbar";
-import Footer from '../components/footer'
+import Footer from "../components/footer";
 import styles from "./team.module.scss";
 
 const memberData = [
@@ -41,7 +41,7 @@ export default function Team() {
   return (
     <div className={styles.container}>
       <NavigationBar />
-      <h1 className={styles.title}>Executive Board</h1>
+      <h1 className={styles.category}>Executive Board</h1>
       <hr></hr>
       <EBoard />
       <CommitteeLeads />
@@ -62,7 +62,7 @@ function EBoard(props) {
 function CommitteeLeads(props) {
   return (
     <section>
-      <h1 className={styles.title}>Committee Leads</h1>
+      <h1 className={styles.category}>Committee Leads</h1>
       <hr></hr>
     </section>
   );
@@ -92,9 +92,8 @@ function EBoardMember(props) {
       <Headshot path={headshotName} />
       <br></br>
       <h3 className={styles.name}>{props.name}</h3>
+      <h4 className={styles.title}>{props.title}</h4>
       <hr></hr>
-      <h4 className={styles.detail}>{props.title}</h4>
-      {/*<h4 className={styles.detail}>{props.major}</h4> */}
       <p className={styles.description}>{props.description}</p>
     </div>
   );

@@ -17,143 +17,98 @@
 }
 
 //Components
-.title {
+.category {
   text-align: center;
   color: black;
   font-style: unset;
   font-size: 60px;
   text-shadow: 2px;
   margin-bottom: 20px;
+  margin-top: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 1;
 }
 
-.hr {
+//Eboard Setup
+.eboard_roster {
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.name {
+  text-align: center;
+  color: rgba(15, 1, 1, 0.897);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 30px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  letter-spacing: 2px;
+}
+
+.headshot {
+  width: 100%;
+  height: width;
+  margin-top: 0px;
+}
+
+.title {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+  color: rgba(15, 1, 1, 0.897);
+  margin: 3px;
+}
+
+.description {
+  width: 80%;
+  text-align: center;
+  font-style: italic;
+  margin: auto;
+  margin-top: 8px;
+  margin-bottom: 5px;
+}
+
+.eboard_member {
+  border: 2px solid #444343;
+  border-radius: 8px;
+  width: 25%;
+  box-shadow: 4px 5px #888888;
+  margin: 40px;
 }
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  .headshot {
-    width: 70%;
-    height: width;
+  .eboard_member {
+    width: 90%;
   }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  .headshot {
-    width: 80%;
-    height: width;
+  .eboard_member {
+    width: 70%;
   }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  .name {
-    text-align: center;
-  }
-  .headshot {
-    width: 20%;
-    height: width;
+  .eboard_member {
+    width: 50%;
   }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  .eboard_roster {
-    position: relative;
-    text-align: center;
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-  }
-
   .eboard_member {
-    border: 2px solid rosybrown;
-    width: 25%;
-    box-shadow: 4px 5px #888888;
-    margin: 40px;
-  }
-
-  .name {
-    text-align: center;
-    color: rgba(15, 1, 1, 0.897);
-    font-family: Georgia, "Times New Roman", Times, serif;
-    font-size: 30px;
-    margin-top: 4px;
-    margin-bottom: 4px;
-    letter-spacing: 2px;
-  }
-
-  .hr {
-    size: 10%;
-  }
-
-  .headshot {
-    width: 100%;
-    height: width;
-    margin-top: 0px;
-  }
-
-  .detail {
-    font-family: Georgia, "Times New Roman", Times, serif;
-    font-size: 20px;
-    color: rgba(15, 1, 1, 0.897);
-    margin: 3px;
-  }
-
-  .description {
-    width: 100%;
-    text-align: center;
-    font-style: italic;
+    width: 35%;
   }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  .eboard_roster {
-    position: relative;
-    text-align: center;
-    justify-content: center;
-    border: 1px solid rgba(56, 49, 49, 0.007);
-    display: flex;
-    flex-wrap: wrap;
-  }
-
   .eboard_member {
     width: 25%;
-    box-shadow: 4px 5px #888888;
-    margin: 40px;
-  }
-
-  .name {
-    text-align: center;
-    color: rgba(15, 1, 1, 0.897);
-    font-family: Georgia, "Times New Roman", Times, serif;
-    font-size: 30px;
-    margin-top: 4px;
-    margin-bottom: 4px;
-    letter-spacing: 2px;
-  }
-
-  .hr {
-    size: 10%;
-  }
-
-  .headshot {
-    width: 100%;
-    height: width;
-    margin-top: 0px;
-  }
-
-  .detail {
-    font-family: Georgia, "Times New Roman", Times, serif;
-    font-size: 20px;
-    color: rgba(15, 1, 1, 0.897);
-    margin: 3px;
-  }
-
-  .description {
-    width: 100%;
-    text-align: center;
-    font-style: italic;
   }
 }
