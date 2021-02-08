@@ -117,6 +117,14 @@
   .eboard_member {
     width: 90%;
   }
+
+  .description {
+    font-size: 0.75rem;
+  }
+
+  .category {
+    font-size: 35px;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -124,6 +132,7 @@
   .eboard_member {
     width: 70%;
   }
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
