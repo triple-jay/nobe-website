@@ -1,25 +1,30 @@
 /* ==========
   global styles
   =========== */
-
 .container {
-    font-size: 15px;
-    font-family: 'Raleway', sans-serif;
-    margin: 0;
-    padding: 0;
+  font-size: 15px;
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  height: 100vh;
+  background-image: url("./../public/background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top;
 }
 
 /* ==========
   layout
   =========== */
-  .body {
-    margin: 10px 50px 0px 50px;
-  }
+.body {
+  margin: 10px 50px 0px 50px;
+}
 /* ==========
   components
   =========== */
 
-  /* title */
+/* title */
 
 .nobe_cornell {
   position: absolute;
@@ -39,10 +44,10 @@
 }
 
 .nobe_cornell h3 {
-  font-size: 1.5rem;
+  font-size: 2rem;
+  font-weight: bolder;
 }
 
 .cornell {
-  color: #844;
+  color: #b31b1b;
 }
-

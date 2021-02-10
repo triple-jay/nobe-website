@@ -3,7 +3,11 @@ import Footer from "../components/footer";
 import styles from "./team.module.scss";
 
 const memberData = [
-  ["Andrew Osorio", "President", "[Description]"],
+  [
+    "Andrew Osorio",
+    "President",
+    "My name is Andrew Osorio and I’m a sophomore this year from Austin, TX majoring in Computer Science and minoring in Economics. I founded NOBE Cornell to expose members to foster a community where business and engineering students can build meaningful connections and collaborate on projects by integrating both fields. This summer I worked for a startup aiming to facilitate the ticket payment process. In my free time I enjoy staying active and I recently picked up snowboarding and sailing.",
+  ],
   ["VP External", "VP External", "[Description]"],
   [
     "Andrew Zeng",
@@ -42,7 +46,6 @@ export default function Team() {
     <div className={styles.container}>
       <NavigationBar />
       <h1 className={styles.category}>Executive Board</h1>
-      <hr></hr>
       <EBoard />
       <CommitteeLeads />
       <Footer />

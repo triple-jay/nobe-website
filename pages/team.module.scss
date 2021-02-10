@@ -19,7 +19,12 @@
 //Components
 .category {
   text-align: center;
-  color: black;
+  color: #b31b1b;
+  text-underline-offset: 3px;
+  text-decoration: underline;
+  text-decoration-color: #979595;
+  text-decoration-thickness: 2px;
+  text-decoration-style: initial;
   font-style: unset;
   font-size: 60px;
   text-shadow: 2px;
@@ -40,7 +45,7 @@
 
 .name {
   text-align: center;
-  color: rgba(15, 1, 1, 0.897);
+  color: #b31b1b;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 30px;
   margin-top: 4px;
@@ -57,7 +62,7 @@
 .title {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 20px;
-  color: rgba(15, 1, 1, 0.897);
+  color: #979595;
   margin: 3px;
 }
 
