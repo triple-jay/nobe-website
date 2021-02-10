@@ -1,59 +1,60 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700&display=swap");
 
 /* ==========
   global styles
   =========== */
 
-  .container {
-    font-size: 15px;
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* ==========
+.container {
+  font-size: 15px;
+  overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* ==========
     layout
     =========== */
-  
-  .body {
-    height: 100vh;
-    position: relative;
-    margin: 10px 50px 0px 50px;
-  }
-  
-  /* ==========
+
+.body {
+  height: 100vh;
+  position: relative;
+  margin: 10px 50px 0px 50px;
+}
+
+/* ==========
     components
     =========== */
-  
-    /* button */
 
-    .apply_button {
-        font-family: 'Montserrat';
-        float: right;
-        background-color: #8B0000;
-        font-size: 1.3rem;
-        color: white;
-        border-radius: 12px;
-        padding: 10px;
-        border: none;
-        box-shadow: 2px 2px 5px 0 #888;
-        margin: 15px;
-        transition: background-color ease-in-out 200ms;
-    }
+/* button */
 
-    .apply_button:hover {
-        background-color: #B22222;
-        cursor: pointer;
-    }
+.apply_button {
+  font-family: "Montserrat";
+  float: right;
+  background-color: #8b0000;
+  font-size: 1.3rem;
+  color: white;
+  border-radius: 12px;
+  padding: 10px;
+  border: none;
+  box-shadow: 2px 2px 5px 0 #888;
+  margin: 15px;
+  transition: background-color ease-in-out 200ms;
+}
 
-    /* paragraphs */
+.apply_button:hover {
+  background-color: #b22222;
+  cursor: pointer;
+}
 
-    .p {
-        clear: both;
-        margin: 10px 0px;
-    }
+/* paragraphs */
 
-    .mail {
-        text-decoration: underline;
-        color: blue;
-    }
+.p {
+  clear: both;
+  margin: 10px 0px;
+}
+
+.mail {
+  text-decoration: underline;
+  color: blue;
+}
