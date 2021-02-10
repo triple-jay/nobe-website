@@ -17,7 +17,14 @@ export default function Home() {
           <div className={styles.nobe_cornell}>
             <h2>NOBE&nbsp;</h2>
             <h2 className={styles.cornell}>Cornell</h2>
+<<<<<<< HEAD
             <h3> Preparing students for success in business and engineering</h3>
+=======
+            <h3> Preparing students for success in business and engineering.</h3>
+            <p className={styles.attribution}>
+              "Chrysler Building at Sunset, NYC" by diana_robinson is licensed with CC BY-NC-ND 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-nd/2.0/
+            </p>
+>>>>>>> d80c4655f991712c45aadceacc9b9ae54c8d4c58
           </div>
         </div>
       </div>

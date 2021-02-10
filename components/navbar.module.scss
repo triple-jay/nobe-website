@@ -4,6 +4,7 @@
 
 .container {
   font-size: 15px;
+  font-family: 'Montserrat', arial;
 }
 
 /* ==========
@@ -78,4 +79,35 @@
 
 .nav_bar a:hover::before {
   width: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+
+  .nobe_cornell_logo {
+    float: left;
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+  }
+
+  .nav_bar a {
+    font-size: 11px;
+  }
+
+  .nav_item {
+    margin-left: 15px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .nobe_cornell_logo {
+    float: left;
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+  }
+
+  .nav_item {
+    margin-left: 10px;
+  }
 }

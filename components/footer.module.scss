@@ -32,3 +32,9 @@
     margin-right: 10px;
     float: right;
 }
+
+@media only screen and (max-width: 600px) {
+    .footer_wrapper {
+        font-size: 0.7rem;
+    }
+  }
