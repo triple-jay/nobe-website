@@ -49,14 +49,8 @@
 
 .name {
   text-align: center;
-<<<<<<< HEAD
-  color: #b31b1b;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 30px;
-=======
   color: rgba(15, 1, 1, 0.897);
   font-size: 1.5rem;
->>>>>>> d80c4655f991712c45aadceacc9b9ae54c8d4c58
   margin-top: 4px;
   margin-bottom: 4px;
   letter-spacing: 2px;
@@ -71,11 +65,6 @@
 }
 
 .title {
-<<<<<<< HEAD
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 20px;
-  color: #979595;
-=======
   font-size: 1rem;
   color: rgba(15, 1, 1, 0.897);
   margin: 3px;
@@ -85,7 +74,6 @@
   font-size: 0.7rem;
   font-weight: 500;
   color: rgba(15, 1, 1, 0.897);
->>>>>>> d80c4655f991712c45aadceacc9b9ae54c8d4c58
   margin: 3px;
 }
 
@@ -101,7 +89,7 @@
   justify-content: center;
   background-color: white;
   opacity: 0;
-  transition: opacity .5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
 }
 
 .description_wrapper:hover {
@@ -110,7 +98,7 @@
 
 .description {
   transform: translateY(30px);
-  transition: transform .5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
   padding: 1.5em;
 }
 
@@ -118,10 +106,8 @@
   transform: translateY(0px);
 }
 
-
-
 .eboard_member {
-  font-family: 'Montserrat', arial;
+  font-family: "Montserrat", arial;
   border-radius: 8px;
   width: 25%;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
@@ -149,7 +135,6 @@
   .eboard_member {
     width: 70%;
   }
-
 }
 
 /* Medium devices (landscape tablets, 768px and up) */

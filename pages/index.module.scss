@@ -2,25 +2,27 @@
   global styles
   =========== */
 .container {
-    font-size: 15px;
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    padding: 0;
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 /* ==========
   layout
   =========== */
-  .body {
-    background-image: url("../public/skyline.jpg");
-    background-size: cover;
-    overflow: clip;
-    background-repeat: no-repeat;
-    height: 100vh;
-    width: 100vw;
-    position: relative;
-    color: white;
-  }
+.body {
+  background-image: url("../public/skyline.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  color: white;
+  overflow: hidden;
+  overflow-y: hidden;
+}
 /* ==========
   components
   =========== */
@@ -31,7 +33,7 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  margin: 30px;
+  margin: 35px;
   font-weight: 400;
 }
 
@@ -42,26 +44,18 @@
 }
 
 .nobe_cornell h3 {
-<<<<<<< HEAD
-  font-size: 2rem;
-  font-weight: bolder;
-}
-
-.cornell {
-  color: #b31b1b;
-}
-=======
   font-size: 1.5rem;
   margin: 0;
 }
 
 .cornell {
-  color: rgb(184, 68, 68);
+  color: #b31b1b;
 }
 
 .attribution {
   font-size: 0.5em;
   float: left;
+  margin-bottom: 60px;
 }
 
 @media only screen and (max-width: 800px) {
@@ -83,4 +77,3 @@
     font-size: 1.2rem;
   }
 }
->>>>>>> d80c4655f991712c45aadceacc9b9ae54c8d4c58
