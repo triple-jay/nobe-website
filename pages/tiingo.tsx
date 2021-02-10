@@ -26,7 +26,7 @@ export default function Tiingo() {
         <img className={styles.example} src={"statistics.png"} />
         <p className={styles.caption}>Portfolio Metrics</p>
         <img className={styles.example} src={"stock.png"} />
-        <p className={styles.caption}>Real-time Stock Data</p>
+        <p className={styles.caption}>Real-Time Stock Data</p>
         <h2 className={styles.section_title}>Prizes</h2>
         <ul className={styles.prizes}>
           <li>1st Place: $150</li>
