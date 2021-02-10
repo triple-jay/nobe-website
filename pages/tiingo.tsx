@@ -21,11 +21,11 @@ export default function Tiingo() {
           </p>
           <img src={"tiingo_horizontal_logo.png"} className={styles.logo} />
         </section>
-        <img className={styles.example} src={"dashboard.png"} />
+        <img className={styles.example} src={"main_screen.png"} />
         <p className={styles.caption}>Dashboard</p>
-        <img className={styles.example} src={"statistics.png"} />
+        <img className={styles.example} src={"stats.png"} />
         <p className={styles.caption}>Portfolio Metrics</p>
-        <img className={styles.example} src={"stock.png"} />
+        <img className={styles.example} src={"stocks.png"} />
         <p className={styles.caption}>Real-Time Stock Data</p>
         <h2 className={styles.section_title}>Prizes</h2>
         <ul className={styles.prizes}>
