@@ -19,7 +19,7 @@ export default function Home() {
             <h2 className={styles.cornell}>Cornell</h2>
             <h3>
               {" "}
-              Preparing students for success in business and engineering.
+              Preparing students for success in business and engineering
             </h3>
             <p className={styles.attribution}>
               "Chrysler Building at Sunset, NYC" by diana_robinson is licensed
