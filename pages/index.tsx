@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>NOBE <Cornell></Cornell></title>
+        <title>NOBE Cornell<Cornell></Cornell></title>
         <link rel="icon" href="/nobe-cornell.png" />
       </Head>
       <div className={styles.container}>
