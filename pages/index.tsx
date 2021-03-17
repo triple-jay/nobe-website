@@ -9,7 +9,7 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>NOBE </title>
-        <link rel="icon" href="/nobe-cornell.png" />
+        <link rel="icon" href="/background.png" />
       </Head>
       <div className={styles.container}>
         <NavigationBar />
