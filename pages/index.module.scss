@@ -1,70 +1,41 @@
-/* ==========
-  global styles
-  =========== */
-.container {
-  font-size: 15px;
-  font-family: "Montserrat", sans-serif;
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-}
-
-/* ==========
-  layout
-  =========== */
-.body {
-  background-image: url("../public/background.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  opacity: .85;
-  height: 100vh;
-  width: 100vw;
-  position: relative;
-  color: white;
-  overflow: hidden;
-  overflow-y: hidden;
-}
-/* ==========
-  components
-  =========== */
-
-/* title */
-
-.nobe_cornell {
-  position: absolute;
-  left: 0;
-  font-weight: 400;
-  margin: 35px; 
-  bottom: 15%;
-}
-
-.nobe_cornell h2 {
-  display: inline-block;
-  margin: 0;
-  font-size: 8vw;
-  font-size: 10vh;
-}
-
-.nobe_cornell h3 {
-  margin: 0;
-  font-size: 3vw;
-  font-size: 4vh;
-}
-
-.cornell {
-  color: #b31b1b;
-}
-
-@media only screen and (max-width: 600px) {
-  .nobe_cornell h2 {
-    // font-size: 4rem;
-
-    font-size: 6vw;
-    font-size: 8vh;
-  }
-
-  .nobe_cornell h3 {
-    font-size: 2vw;
-    font-size: 3vh;
+.homePageContainer {
+  --multiplier: 1;
+  .homePageContent {
+    width: 100%;
+    height: 100%;
+    min-height: -webkit-fill-available;
+    .bodyContent {
+      margin: 0px;
+      width: 100%;
+      height: calc(100vh - calc(var(--multiplier) * 96.32px));
+      background-image: url("../public/background.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      opacity: .85;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-end;
+      .nobeCornellText {
+        color: white;
+        padding: 0;
+        margin-right: calc(var(--multiplier) * 20px);
+        font-weight: bold;
+        font-family: "Roboto";
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        .nobeCornellHeadText {
+          font-size: calc(var(--multiplier) * 80px);
+          padding: 0;
+          margin: 0;
+        }
+        .nobeCornellSecondaryText {
+          font-size: calc(var(--multiplier) * 25px);
+          width: calc(var(--multiplier) * 400px);
+          text-align: right;
+        }
+      }
+    }
   }
 }

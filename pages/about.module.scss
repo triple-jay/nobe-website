@@ -1,0 +1,71 @@
+.aboutContainer {
+    --multiplier: 1;
+    width: 100%;
+    height: 100%;
+    min-height: -webkit-fill-available;
+    .aboutNobe {
+        margin-top: calc(var(--multiplier) * 30px);
+        .aboutNobeText {
+            width: calc(var(--multiplier) * 796.2px);
+            height: calc(var(--multiplier) * 440px);
+            background-image: url("../public/about-background.svg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: relative;
+            .aboutNobeContent {
+                padding-left: calc(var(--multiplier) * 80px);
+                padding-top: calc(var(--multiplier) * 30px);
+                color: white;
+                width: calc(var(--multiplier) * 552.77px);
+                .aboutHeader {
+                    font-size: calc(var(--multiplier) * 50px);
+                }
+                .divider {
+                    width: calc(var(--multiplier) * 145px);
+                    height: calc(var(--multiplier) * 5px);
+                    background-color: #BBBBBB;
+                }
+                .aboutContent {
+                    font-size: calc(var(--multiplier) * 12px);
+                }
+            }
+            .nycPhoto {
+                position: absolute;
+                z-index: 1;
+                top: calc(var(--multiplier) * 18px);
+                left: calc(var(--multiplier) * 700px);
+                width: calc(var(--multiplier) * 600px);
+                height: calc(var(--multiplier) * 400px);
+            }
+
+        }
+    }
+    .placements {
+        width: 100%;
+        padding-top: calc(var(--multiplier) * 25px);
+        .placementsContent {
+            padding-left: calc(var(--multiplier) * 75px);
+            padding-right: calc(var(--multiplier) * 105px);
+            display: flex;
+            align-items: center;
+            .placementsImage {
+                width: calc(var(--multiplier) * 660px);
+                height: calc(var(--multiplier) * 306px);
+                margin-right: calc(var(--multiplier) * 50px);
+            }
+            .placementsText {
+                .placementsHeader {
+                    font-size: calc(var(--multiplier) * 25px);
+                }
+                .aboutContent {
+                    font-size: calc(var(--multiplier) * 12px);
+                }
+                .divider {
+                    width: calc(var(--multiplier) * 145px);
+                    height: calc(var(--multiplier) * 5px);
+                    background-color: #BBBBBB;
+                }
+            }
+        }
+    }
+}

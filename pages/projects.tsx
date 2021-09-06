@@ -3,7 +3,7 @@ import Footer from '../components/footer';
 import { useState, MouseEvent } from 'react';
 import styles from './projects.module.scss';
 
-export default function Team() {
+export default function Projects() {
 
     const [description, setDescription] = useState('');
     type committee = 'finance' | 'consulting' | 'technology';
@@ -23,34 +23,49 @@ export default function Team() {
     }
 
     return (
-    <div className={styles.container}>
+    <div className={styles.projectsContainer}>
         <NavigationBar />
-        <div className={styles.body}>
-            <h1>Who are we?</h1>
-            <p className={styles.p}>
-                Cornell NOBE is an organization dedicated to bridging the gap between business and technology
-                in today's industry. We are comprised of three different committees: Finance, Consulting, and
-                Technology. Each committee has one or more subteams each led by a project manager. Throughout
-                the year, members in each subteam will work on a project related to their chosen committee's field.
+        <div className={styles.projectsContent}>
+            <h2 className={styles.projectsHeader}>PROJECTS OVERVIEW</h2>
+            <h3 className={styles.projectsSubHeader}>Furthering Careers</h3>
+            <div className={styles.projectsDivider}></div>
+            <p className={styles.projectsDescription}>
+                Cornell at NOBE will host several networking events throughout the semester. 
+                They will be held by some of the leading business and technology companies 
+                across the world, and members will have the opportunity to talk to recruiters 
+                and get to know more about what each company has to offer. 
             </p>
-            <h2>Furthering Careers</h2>
-            <p className={styles.p}> 
-                Cornell NOBE will host several networking events throughout the semester. They will be held by 
-                some of the leading business and technology companies across the world, and members will have
-                the opportunity to talk to recruiters and get to know more about what each company has to offer. 
-                Below, you can see some companies that hosted an event at our chapter in past semesters.
-            </p>
-            <h2>Committees</h2>
-            <ul className={styles.committee_list}> 
-                <li className={styles.committee} onClick={e => selectCommittee(e, 'finance')}>Finance</li>
-                <li className={styles.committee} onClick={e => selectCommittee(e, 'consulting')}>Consulting</li>
-                <li className={styles.committee} onClick={e => selectCommittee(e, 'technology')}>Technology</li>
-            </ul>
-            <div>
-                <p className={styles.p}>{description}</p>
+            <h3 className={styles.projectsSubHeader}>Committees</h3>
+            <div className={styles.projectsDivider}></div>
+            <div className={styles.committeesContainer}>
+                <div className={styles.committee}>FINANCE</div>
+                <div className={styles.committee}>CONSULTING</div>
+                <div className={styles.committee}>TECHNOLOGY</div>
+                <div className={styles.committee}>ENGINEERING</div>
+            </div>
+            <div className={styles.commiteeDescContainer}>
+                <div className={styles.commiteeContent}>
+                    <h2 className={styles.descHeader}>NOBE 2021 STOCK GAME</h2>
+                    <div className={styles.descSubHeader}>{'Prizes - \n1st Place : $150 \n2nd Place - $75 \n3rd Place - $50'}</div>
+                    <div className={styles.commiteeDescContent}>
+                        <div className={styles.descBox}>
+                            <div className={styles.descContent}>
+                                The NOBE 2021 Stock Market Game is a simulated investment 
+                                competition where participants will have the chance to hone 
+                                their investment skills and learn more about portfolio management. 
+                                We are proud to partner with Tiingo: a next-generation financial platform 
+                                that uses both a REST and a Real-Time Data API to provide a realistic simulation 
+                                of stock-market data.
+                            </div>
+                            <img className={styles.descImg} src="../tiingo-logo.svg"/>
+                        </div>
+                        <img className={styles.commiteeDescImage} src="../tiingo-images.svg"/>
+                    </div>
+                </div>
+                <img className={styles.blCorner} src="../bl-corner.svg"/>
+                <img className={styles.trCorner} src="../tr-corner.svg"/>  
             </div>
         </div>
-        <Footer />
     </div>
     );
 }

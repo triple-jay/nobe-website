@@ -1,113 +1,56 @@
-/* ==========
-  global styles
-  =========== */
-
-.container {
-  font-size: 15px;
-  font-family: 'Montserrat', arial;
-}
-
-/* ==========
-    layout
-    =========== */
-
-.nav_bar {
-  float: right;
-  margin-right: 20px;
-}
-
-/* ==========
-    components
-    =========== */
-
-/* nav bar */
-
-.nobe_cornell_logo {
-  float: left;
-  width: 60px;
-  height: 60px;
-  margin: 10px 20px;
-}
-
-.nav_container {
+.navContainer {
+  --multiplier: 1;
   width: 100%;
-  margin: 0 auto;
-  background-color: white;
-}
-
-.nav_container::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.nav_list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.nav_item {
-  display: inline-block;
-  margin-left: 80px;
-  padding-top: 25px;
-  position: relative;
-}
-
-.nav_bar a {
-  color: #444;
-  text-transform: uppercase;
-  letter-spacing: 2.5px;
-  font-size: 15px;
-}
-
-.nav_bar a:hover {
-  color: black;
-}
-
-.nav_bar a::before {
-  content: "";
-  display: block;
-  height: 5px;
-  width: 100%;
-  background-color: #844;
-  position: absolute;
-  top: 0;
-  width: 0%;
-  transition: all ease-in-out 300ms;
-}
-
-.nav_bar a:hover::before {
-  width: 100%;
-}
-
-@media only screen and (max-width: 800px) {
-
-  .nobe_cornell_logo {
-    float: left;
-    width: 40px;
-    height: 40px;
-    margin: 10px;
+  height: calc(var(--multiplier) * 96.32px);
+  background-color: #E6D3DC;
+  .navContent {
+    margin-left: calc(var(--multiplier) * 40px);
+    margin-right: calc(var(--multiplier) * 20px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: calc(var(--multiplier) * 96.32px);
+    .logoLink {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: calc(var(--multiplier) * 70px);
+      height: calc(var(--multiplier) * 69.51px);
+      .nobeCornellLogo {
+        width: calc(var(--multiplier) * 70px);
+        height: calc(var(--multiplier) * 69.51px);
+      }
+  
+    }
+    .navBar {
+      .navList {
+        display: flex;
+        list-style-type: none;
+        align-items: center;
+        .navItem {
+          font-family: "Roboto";
+          font-weight: bold;
+          font-size: calc(var(--multiplier) * 23px);
+          color: white;
+          margin-left: calc(var(--multiplier) * 40px);
+          transform: translateY(0px);
+          transition: all 0.3s ease-in-out;
+          &:first-child {
+            margin-left: 0px;
+          }
+          &:last-child {
+            background-color: rgba(165, 166, 246, 0.8);
+            padding: calc(var(--multiplier) * 20px) calc(var(--multiplier) * 34px);
+            &:hover {
+              background-color: rgba(165, 166, 246, 0.6);
+            }
+          }
+          &:hover {
+            transform: translateY(-4px);
+          }
+        }
+      }
+    }
   }
 
-  .nav_bar a {
-    font-size: 11px;
-  }
-
-  .nav_item {
-    margin-left: 15px;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .nobe_cornell_logo {
-    float: left;
-    width: 30px;
-    height: 30px;
-    margin: 10px;
-  }
-
-  .nav_item {
-    margin-left: 10px;
-  }
 }
