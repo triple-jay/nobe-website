@@ -1,60 +1,90 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700&display=swap");
+.applyContainer {
+  --multiplier: 1;
+  width: 100%;
+  height: 100%;
+  min-height: -webkit-fill-available;
+  .appTextAndImg {
+    display: flex;
+    margin-left: calc(var(--multiplier) * 135px);
+    margin-right: calc(var(--multiplier) * 65px);
+    margin-top: calc(var(--multiplier) * 45px);
+    .applicationTextContainer {
+      .appHeader {
+        font-size: calc(var(--multiplier) * 24px);
+      }
+      .appContent {
+        color: #808080;
+        font-size: calc(var(--multiplier) * 14px);
+        font-weight: bold;
+      }
+      .divider {
+        width: calc(var(--multiplier) * 145px);
+        height: calc(var(--multiplier) * 5px);
+        background-color: #BBBBBB;
+      }
+      .appImage {
+        width: calc(var(--multiplier) * 622px);
+        height: calc(var(--multiplier) * 564px);
+      }
+    }
+  }
+  .teamLeadsAndAppLinks {
+    display: flex;
+    position: relative;
+    top: calc(var(--multiplier) * -300px);
+    align-items: flex-end;
+    height: calc(var(--multiplier) * 513px);
+    .teamLeadsContainer {
+      width: calc(var(--multiplier) * 903px);
+      height: calc(var(--multiplier) * 513px);
+      background-image: url("../public/blue-background.svg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      margin-left: calc(var(--multiplier) * 65px);
+      z-index: -1;
+      .teamLeadsContainerContent {
+        padding-left: calc(var(--multiplier) * 94.8px);
+        padding-top: calc(var(--multiplier) * 57.11px);
+        width: calc(var(--multiplier) * 535.57px);
+        height: calc(var(--multiplier) * 360.89px);
+        .teamLeadsHeader {
+          font-size: calc(var(--multiplier) * 64px);
+          color: white;
+          margin: 0;
+          padding: calc(var(--multiplier) * 5px) 0;
+        }
+        .teamLeadsSubHeader {
+          font-size: calc(var(--multiplier) * 24px);
+          margin: 0;
+          padding: calc(var(--multiplier) * 5px) 0;
+        }
+        .divider {
+          width: calc(var(--multiplier) * 145px);
+          height: calc(var(--multiplier) * 5px);
+          background-color: #BBBBBB;
+        }
+        .teamLeadsContent {
+          color: white;
+          font-size: calc(var(--multiplier) * 14px);
+          font-weight: bold;
+        }
+      }
+    }
+    .applicationLinks {
+      list-style-type: none;
+      .application {
+        margin-bottom: calc(var(--multiplier) * 20px);
+        transform: translateY(0px);
+        transition: all 0.4s ease-in-out;
+        &:hover {
+          transform: translateY(calc(var(--multiplier) * -5px));
+        }
+        .appLink {
+          cursor: pointer;
+          font-weight: bold;
+        }
+      }
+    }
+  }
 
-/* ==========
-  global styles
-  =========== */
-
-.container {
-  font-size: 15px;
-  overflow-x: hidden;
-  font-family: "Montserrat", sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-/* ==========
-    layout
-    =========== */
-
-.body {
-  height: 100vh;
-  position: relative;
-  margin: 10px 50px 0px 50px;
-}
-
-/* ==========
-    components
-    =========== */
-
-/* button */
-
-.apply_button {
-  font-family: "Montserrat";
-  float: right;
-  background-color: #8b0000;
-  font-size: 1.3rem;
-  color: white;
-  border-radius: 12px;
-  padding: 10px;
-  border: none;
-  box-shadow: 2px 2px 5px 0 #888;
-  margin: 15px;
-  transition: background-color ease-in-out 200ms;
-}
-
-.apply_button:hover {
-  background-color: #b22222;
-  cursor: pointer;
-}
-
-/* paragraphs */
-
-.p {
-  clear: both;
-  margin: 10px 0px;
-}
-
-.mail {
-  text-decoration: underline;
-  color: blue;
 }

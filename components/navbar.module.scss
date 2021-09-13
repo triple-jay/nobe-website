@@ -2,7 +2,7 @@
   --multiplier: 1;
   width: 100%;
   height: calc(var(--multiplier) * 96.32px);
-  background-color: #E6D3DC;
+  background-color: #F47174;
   .navContent {
     margin-left: calc(var(--multiplier) * 40px);
     margin-right: calc(var(--multiplier) * 20px);
@@ -23,32 +23,49 @@
   
     }
     .navBar {
-      .navList {
-        display: flex;
-        list-style-type: none;
-        align-items: center;
-        .navItem {
-          font-family: "Roboto";
-          font-weight: bold;
-          font-size: calc(var(--multiplier) * 23px);
-          color: white;
-          margin-left: calc(var(--multiplier) * 40px);
-          transform: translateY(0px);
-          transition: all 0.3s ease-in-out;
-          &:first-child {
-            margin-left: 0px;
-          }
-          &:last-child {
-            background-color: rgba(165, 166, 246, 0.8);
-            padding: calc(var(--multiplier) * 20px) calc(var(--multiplier) * 34px);
-            &:hover {
-              background-color: rgba(165, 166, 246, 0.6);
-            }
-          }
-          &:hover {
-            transform: translateY(-4px);
-          }
-        }
+      .hamburgerMenu {
+        width: calc(var(--multiplier) * 60px);
+        height: calc(var(--multiplier) * 60px);
+        cursor: pointer;
+        transition: all 0.4s ease-in-out;
+        // transform-origin: bottom left;
+      }
+    }
+  }
+  .navList {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    align-items: flex-end;
+    background-color: #EDEDED;
+    position: absolute;
+    top: calc(var(--multiplier) * 96.32px);
+    right: 0;
+    margin: 0;
+    z-index: 2;
+    width: calc(var(--multiplier) * 483px);
+    height: calc(var(--multiplier) * 225px);
+    transition: all 0.4s ease-in-out;
+    transform-origin: top;
+    transform: scaleY(0);
+    .navItem {
+      font-family: "Roboto";
+      font-weight: bold;
+      font-size: calc(var(--multiplier) * 23px);
+      color: #A5A6F6;
+      transform: translateY(0px);
+      transition: all 0.3s ease-in-out;
+      margin-right: calc(var(--multiplier) * 20px);
+      margin-top: calc(var(--multiplier) * 20px);
+      &:first-child {
+        margin-left: 0px;
+      }
+      &:last-child {
+        background-color: white;
+        padding: calc(var(--multiplier) * 10px) calc(var(--multiplier) * 20px);
+      }
+      &:hover {
+        transform: translateY(-4px);
       }
     }
   }
