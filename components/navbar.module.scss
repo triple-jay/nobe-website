@@ -71,3 +71,27 @@
   }
 
 }
+
+@media screen and (max-width: 1440px) {
+  .navContainer {
+    --multiplier: 1
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .navContainer {
+    --multiplier: 0.694
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .navContainer {
+    --multiplier: 0.486
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .navContainer {
+    --multiplier: 0.347
+  }
+}
