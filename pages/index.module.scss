@@ -13,28 +13,67 @@
       background-repeat: no-repeat;
       opacity: .85;
       display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      align-items: flex-end;
+      justify-content: center;
+      align-items: center;
+      position: relative;
       .nobeCornellText {
         color: white;
         padding: 0;
-        margin-right: calc(var(--multiplier) * 20px);
         font-weight: bold;
-        font-family: "Roboto";
         display: flex;
         flex-direction: column;
-        align-items: flex-end;
+        align-items: center;
+        justify-content: center;
+        width: calc(100% - 40px);
+        height: calc(100vh - calc(var(--multiplier) * 96.32px));
         .nobeCornellHeadText {
-          font-size: calc(var(--multiplier) * 80px);
+          font-size: calc(var(--multiplier) * 100px);
           padding: 0;
           margin: 0;
         }
-        .nobeCornellSecondaryText {
-          font-size: calc(var(--multiplier) * 25px);
-          width: calc(var(--multiplier) * 400px);
-          text-align: right;
+        .nobeCornellminiHeader {
+          font-size: calc(var(--multiplier) * 20px);
+          padding: 0;
+          margin: 0;
         }
+        .headerDivider {
+          margin-top: calc(var(--multiplier) * 10px);
+          width: calc(var(--multiplier) * 460px);
+          height: calc(var(--multiplier) * 5px);
+          background-color: #F47174;
+        }
+        .nobeCornellSecondaryText {
+          font-size: calc(var(--multiplier) * 30px);
+          text-align: center;
+        }
+      }
+      .tlCorner {
+        width: calc(var(--multiplier) * 125px);
+        height: calc(var(--multiplier) * 125px);
+        position: absolute;
+        top: calc(var(--multiplier) * 25px);
+        left: calc(var(--multiplier) * 25px);
+      }
+      .trCorner {
+        width: calc(var(--multiplier) * 125px);
+        height: calc(var(--multiplier) * 125px);
+        position: absolute;
+        top: calc(var(--multiplier) * 25px);
+        right: calc(var(--multiplier) * 25px);
+      }
+      .blCorner {
+        width: calc(var(--multiplier) * 125px);
+        height: calc(var(--multiplier) * 125px);
+        position: absolute;
+        bottom: calc(var(--multiplier) * 25px);
+        left: calc(var(--multiplier) * 25px);
+      }
+      .brCorner {
+        width: calc(var(--multiplier) * 125px);
+        height: calc(var(--multiplier) * 125px);
+        position: absolute;
+        bottom: calc(var(--multiplier) * 25px);
+        right: calc(var(--multiplier) * 25px);
       }
     }
   }

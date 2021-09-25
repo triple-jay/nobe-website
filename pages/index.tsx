@@ -1,7 +1,6 @@
 import Head from "next/head";
 import styles from "./index.module.scss";
 import "../components/navbar.tsx";
-// import backgroundImage from "../public/cornell-no-attribution.jpg";
 import NavigationBar from "../components/navbar";
 
 export default function Home() {
@@ -26,13 +25,20 @@ export default function Home() {
 
           <div className={styles.nobeCornellText}>
             <h2 className={styles.nobeCornellHeadText}>
-              NOBE AT <span style={{color: '#DE2A2A'}}>CORNELL</span>
+              NOBE AT CORNELL
             </h2>
+            <h4 className={styles.nobeCornellminiHeader}>
+              {'National Organization of Business & Engineering'}
+            </h4>
+            <div className={styles.headerDivider}></div>
             <h3 className={styles.nobeCornellSecondaryText}>
-              {'Preparing students for success in business & engineering'}
+              {'Developing future leaders through the intersection of business & engineering'}
             </h3>
           </div>
-
+          <img src="../tlcorner.png" className={styles.tlCorner}/>
+          <img src="../trcorner.png" className={styles.trCorner}/>
+          <img src="../blcorner.png" className={styles.blCorner}/>
+          <img src="../brcorner.png" className={styles.brCorner}/>
           {/* <div className={styles.nobeCornellInformation}>
             {headersAndInformation.map((elt) => {
               return (
