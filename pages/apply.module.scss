@@ -35,8 +35,8 @@
     align-items: flex-end;
     height: calc(var(--multiplier) * 513px);
     .teamLeadsContainer {
-      width: calc(var(--multiplier) * 903px);
-      height: calc(var(--multiplier) * 513px);
+      width: calc(var(--multiplier) * 860px);
+      height: calc(var(--multiplier) * 500px);
       background-image: url("../public/blue-background.svg");
       background-size: cover;
       background-repeat: no-repeat;
@@ -73,13 +73,16 @@
     .applicationLinks {
       list-style-type: none;
       margin: 0;
+      padding-left: calc((var(--multiplier) * 40px));
+      position: relative;
+      top: calc((var(--multiplier) * -40px));
       .application {
         margin-bottom: calc(var(--multiplier) * 20px);
         height: calc(var(--multiplier) * 30px);
         .appLink {
           cursor: pointer;
           font-weight: bold;
-          font-size: calc((var(--multiplier) * 13px));
+          font-size: calc((var(--multiplier) * 12px));
           color: blue;
         }
       }
