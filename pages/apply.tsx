@@ -59,7 +59,7 @@ export default function Apply() {
                         <a className={styles.appLink} href="https://forms.gle/i5SisHrPNAZfvUot7">General Member Application</a>
                     </li>
                     <li className={styles.application}>
-                        <a className={styles.appLink}>Team Lead Application</a>
+                        <a className={styles.appLink} href="https://forms.gle/51KrW2GvS2hZ3djA7">Team Lead Application</a>
                     </li>
                     <li className={styles.application}>
                         <a className={styles.appLink} href="https://forms.gle/PZisAa589X23H67K6">Executive Board Application</a>
