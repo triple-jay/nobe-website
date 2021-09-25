@@ -76,15 +76,11 @@
       .application {
         margin-bottom: calc(var(--multiplier) * 20px);
         height: calc(var(--multiplier) * 30px);
-        transform: translateY(0px);
-        transition: all 0.4s ease-in-out;
-        &:hover {
-          transform: translateY(calc(var(--multiplier) * -5px));
-        }
         .appLink {
           cursor: pointer;
           font-weight: bold;
           font-size: calc((var(--multiplier) * 13px));
+          color: blue;
         }
       }
     }
