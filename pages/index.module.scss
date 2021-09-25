@@ -102,3 +102,21 @@
     --multiplier: 0.347
   }
 }
+
+@media screen and (max-width: 450px) {
+  .homePageContainer {
+    --multiplier: 0.3125
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .homePageContainer {
+    --multiplier: 0.278
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .homePageContainer {
+    --multiplier: 0.243
+  }
+}
